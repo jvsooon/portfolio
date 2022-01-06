@@ -1,14 +1,15 @@
-$(document).ready(function() {
-  $(".sidenav").sidenav();
+const rows = document.querySelectorAll('.row');
 
-  $(".materialboxed").materialbox();
+$(document).ready(function () {
+	$('.sidenav').sidenav();
+	$('.tabs').tabs();
+	$('.materialboxed').materialbox();
 });
 
-const rows = document.querySelectorAll(".row");
-
 window.onresize = () => {
-  rows.forEach(row => {
-    if (window.innerWidth > 992) row.classList.add("valign-wrapper");
-    else row.classList.remove("valign-wrapper");
-  });
+	rows.forEach((row, index) => {
+		if (window.innerWidth > 992 && index != 0)
+			row.classList.add('valign-wrapper');
+		else row.classList.remove('valign-wrapper');
+	});
 };
