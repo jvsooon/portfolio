@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGREM2NDsiIGQ9Ik0yMTYuMDU2LDUwOS4zMTZsMTk3LjQ4OC0zNDAuMDQ0YzQuNDcxLTcuNjk5LTEuODctMTcuMTczLTEwLjY5Mi0xNS45NzNsLTEzMS4zNjQsMTcuODU1DQoJTDMwMi44NzUsNi4zNzJjMS4wNTgtNS41NTUtNi4xMDQtOC43MzgtOS41MTgtNC4yMzFMOTkuMTgzLDI1OC40NTFjLTUuNjU2LDcuNDY1LDAuMzMzLDE4LjA4LDkuNjQ3LDE3LjFsMTQ0LjgyOC0xNS4yNDUNCglsLTQ3LjQ3OSwyNDUuMzA4QzIwNS4wMzQsNTExLjUzMSwyMTMuMDI5LDUxNC41MjgsMjE2LjA1Niw1MDkuMzE2eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQzg1MDsiIGQ9Ik0xNTkuOTA1LDI0MC4yODdjLTMuNjI3LDAuMjktNi4wMzYtMy42NzUtNC4xMDgtNi43NkwzMDAuOTc2LDEuMjQxDQoJYy0yLjE2LTEuNzA5LTUuNTYtMS44MTktNy42MTksMC44OTlMOTkuMTgzLDI1OC40NWMtNS42NTYsNy40NjYsMC4zMzMsMTguMDgsOS42NDcsMTcuMWwxNDQuODI4LTE1LjI0NWwtNDcuNDc5LDI0NS4zMDgNCgljLTAuNjQsMy4zMDksMS41OTIsNS42MzcsNC4yMDEsNi4xOTRsODEuMzU5LTI1Ny40NDdjMy44MTQtMTIuMDY3LTUuODA4LTI0LjE1Ni0xOC40MjMtMjMuMTQ2TDE1OS45MDUsMjQwLjI4N3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
+		/>
+
+		<title>Jason Sabal</title>
+
+		<!-- import the webpage's stylesheet -->
+		<link rel="stylesheet" href="/style.css" />
+
+		<!-- import the webpage's javascript file -->
+		<script src="/script.js" defer></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-X3K17ZYRCT"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-X3K17ZYRCT');
+		</script>
+
+		<!--Import Material Icons-->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<!--   Import FontAweseome Icons   -->
+		<script
+			src="https://kit.fontawesome.com/e504f5c289.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+	</head>
+	<body>
+		<!--   Navbar   -->
+		<header>
+			<nav class="transparent">
+				<div class="nav-wrapper">
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"
+						><i class="material-icons">menu</i></a
+					>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#home" class="text-shadow">Home</a></li>
+						<li><a href="#projects" class="text-shadow">Projects</a></li>
+						<li>
+							<a
+								href="https://cdn.glitch.me/86d96c2b-cbff-4b11-9d2f-193fe89c8efb%2FJason-Sabal-Resume.pdf?v=1636403717481"
+								class="text-shadow"
+								target="_blank"
+								rel="noopener"
+								>Resume</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<ul class="sidenav" id="mobile-demo">
+				<li><a class="sidenav-close" href="#home">Home</a></li>
+				<li><a class="sidenav-close" href="#projects">Projects</a></li>
+				<li>
+					<a
+						class="sidenav-close"
+						href="https://cdn.glitch.me/86d96c2b-cbff-4b11-9d2f-193fe89c8efb%2FJason-Sabal-Resume.pdf?v=1636403717481"
+						target="_blank"
+						rel="noopener"
+						>Resume</a
+					>
+				</li>
+			</ul>
+		</header>
+
+		<!--   Hero Section   -->
+		<section class="hero-section">
+			<div class="hero-img">
+				<img
+					class="hero-img"
+					src="https://cdn.glitch.me/86d96c2b-cbff-4b11-9d2f-193fe89c8efb%2FHero%20Min.jpg?v=1635114917536"
+					alt="Photo of a bridge in a forest"
+				/>
+				<div class="personal-img-container center">
+					<img
+						class="personal-img circle"
+						src="https://cdn.glitch.me/86d96c2b-cbff-4b11-9d2f-193fe89c8efb%2FCover%20Min.jpg?v=1635115797756"
+						alt="Photo of Jason Sabal"
+					/>
+					<div>
+						<h4 class="white-text text-shadow">Oi, I'm Jason</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--   Projects Section   -->
+		<section id="projects">
+			<!--    Project 1    -->
+			<div class="container">
+				<div class="center-align section__title-spacing">
+					<h4>Projects</h4>
+				</div>
+				<div class="row">
+					<div class="col s12 m12 l6">
+						<img
+							class="responsive-img materialboxed"
+							src="https://cdn.glitch.me/86d96c2b-cbff-4b11-9d2f-193fe89c8efb%2FMataConnect%20Mockup%20Min.png?v=1635141179573"
+							alt="Iphone mockup with screens from MataConnect app"
+						/>
+					</div>
+
+					<div class="col s12 m12 l6">
+						<h5>MataConnect</h5>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Adzuna API integration to allow keyword and location job
+								search.</span
+							>
+						</div>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Google Maps & Google Places API integration to provide
+								autocomplete location suggestions and campus building
+								information.</span
+							>
+						</div>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Firebase backend to handle user authentication and
+								storage.</span
+							>
+						</div>
+						<h6>Tech Stack</h6>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right
+							</icon>
+							<span>Expo, Firebase, Python</span>
+						</div>
+						<h6>Tools</h6>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right
+							</icon>
+							<span>Visual Studio Code, GitLab</span>
+						</div>
+						<div>
+							<a
+								href="https://github.com/jvsooon/MataConnect"
+								class="waves-effect waves-light btn blue darken-2 btn-spacing"
+								target="_blank"
+								rel="noopener"
+								><i class="fab fa-github"></i>Repo</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 2 -->
+				<div class="row">
+					<div class="col s12 m12 l6 push-l6">
+						<img
+							class="responsive-img materialboxed"
+							src="https://cdn.glitch.me/86d96c2b-cbff-4b11-9d2f-193fe89c8efb%2FChillFlix%20Mockup%20Min.jpg?v=1635141401317"
+							alt="Screens from ChillFlix movie site"
+						/>
+					</div>
+					<div class="col s12 m12 l6 pull-l6">
+						<h5>ChillFlix</h5>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Use of Angular Material UI component library to keep a
+								consistent theme throught all parts of the site.</span
+							>
+						</div>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>The Movie Database API integration to allow movie search
+								functionality.</span
+							>
+						</div>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Firebase backend to handle user authentication and
+								storage.</span
+							>
+						</div>
+						<h6>Tech Stack</h6>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right
+							</icon>
+							<span>Angular, Angular Material, Firebase</span>
+						</div>
+						<h6>Tools</h6>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right
+							</icon>
+							<span>Visual Studio Code, GitHub</span>
+						</div>
+						<div>
+							<a
+								href="https://github.com/ham329/comp584-movie-search"
+								class="waves-effect waves-light btn blue darken-2 btn-spacing"
+								target="_blank"
+								rel="noopener"
+								><i class="fab fa-github"></i>Repo</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="row">
+					<div class="col s12 m12 l6">
+						<img
+							class="responsive-img materialboxed"
+							src="https://cdn.glitch.me/86d96c2b-cbff-4b11-9d2f-193fe89c8efb%2FDream%20House.png?v=1635138792634"
+							alt="Landing Page Photo of Dream House Site"
+						/>
+					</div>
+
+					<div class="col s12 m12 l6">
+						<h5>Dream House Landing Page</h5>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Responsive website implementation starting with Desktop first
+								layout based on UI design built by Safatul Islam Aly.</span
+							>
+						</div>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Use of Flickity library to implement carousel
+								functionality.</span
+							>
+						</div>
+						<h6>Tech Stack</h6>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right
+							</icon>
+							<span>HTML, CSS, JavaScript</span>
+						</div>
+						<h6>Tools</h6>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right
+							</icon>
+							<span>Visual Studio Code, GitHub</span>
+						</div>
+						<div>
+							<a
+								href="https://github.com/jvsooon/dream-house"
+								class="waves-effect waves-light btn blue darken-2 btn-spacing"
+								target="_blank"
+								rel="noopener"
+								><i class="fab fa-github"></i>Repo</a
+							>
+							<a
+								href="https://dreamhom.netlify.app"
+								class="waves-effect waves-light btn blue darken-2 btn-spacing"
+								target="_blank"
+								rel="noopener"
+								><i class="fas fa-external-link-alt"></i>Demo</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 4 -->
+				<div class="row">
+					<div class="col s12 m12 l6 push-l6">
+						<img
+							class="responsive-img materialboxed"
+							src="https://cdn.glitch.me/86d96c2b-cbff-4b11-9d2f-193fe89c8efb%2FPlanty%20Shop%20Min.png?v=1635138788005"
+							alt="Landing Page Photo of Planty Shop Site"
+						/>
+					</div>
+					<div class="col s12 m12 l6 pull-l6">
+						<h5>Planty Landing Page</h5>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Responsive website implementation starting with mobile first
+								layout based on UI design built by Ulviyya Taghiyeva.</span
+							>
+						</div>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right </icon
+							><span
+								>Use of Flickity library to implement carousel
+								functionality.</span
+							>
+						</div>
+						<h6>Tech Stack</h6>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right
+							</icon>
+							<span>HTML, CSS, JavaScript</span>
+						</div>
+						<h6>Tools</h6>
+						<div class="bullet-align">
+							<icon
+								ico="chevron_right"
+								class="au-target material-icons"
+								au-target-id="60"
+							>
+								chevron_right
+							</icon>
+							<span>Visual Studio Code, GitHub</span>
+						</div>
+						<div>
+							<a
+								href="https://github.com/jvsooon/planty-shop"
+								class="waves-effect waves-light btn blue darken-2 btn-spacing"
+								target="_blank"
+								rel="noopener"
+								><i class="fab fa-github"></i>Repo</a
+							>
+							<a
+								href="https://planty-shop.netlify.app"
+								class="waves-effect waves-light btn blue darken-2 btn-spacing"
+								target="_blank"
+								rel="noopener"
+								><i class="fas fa-external-link-alt"></i>Demo</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script
+			type="text/javascript"
+			src="https://code.jquery.com/jquery-2.1.1.min.js"
+		></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	</body>
+</html>
