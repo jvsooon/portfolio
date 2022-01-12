@@ -58,10 +58,9 @@ nav {
 }
 
 .hero__title {
-	position: relative;
+	position: absolute;
 	width: 100%;
-	top: 40%;
-	transform: translateY(-40%);
+	top: 45%;
 	margin: 0 auto;
 }
 
@@ -71,7 +70,9 @@ nav {
 	height: 200px;
 	object-fit: cover;
 	border: 5px solid #ffffff;
-	margin-top: 12em;
+	position: absolute;
+	top: 100%;
+	transform: translate(-50%, -50%);
 }
 
 .section__title-spacing {
